@@ -1,1 +1,2 @@
 openai_key='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'
+GOOGLE_API_KEY="AIzaSyBtZMMHjDUap_6M5aJ8tsJCJVhuC9LewNo"

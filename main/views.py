@@ -496,3 +496,19 @@ def download_model(request, model_filename):
         # Handle any other exceptions that may occur during the process
         print("Error:", str(e))
         return HttpResponse("An error occurred while trying to download the file: " + str(e), status=500)
+    
+# ========= chatbot agent response ===========
+from django.http import JsonResponse
+from .chatbot_agent import get_gemini_repsonse
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt  # Add this decorator to bypass CSRF protection
+def chatbot_response(request):
+    if request.method == 'POST':
+        message = request.POST.get('message')
+        response_text = get_gemini_repsonse(message)  # Get the response text directly
+        
+        # Ensure the response is properly formatted as JSON
+        return JsonResponse({'response': response_text})  # Return the response text as JSON
+    else:
+        return JsonResponse({'error': 'Invalid request method'})
