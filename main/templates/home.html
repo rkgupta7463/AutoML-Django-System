@@ -1,0 +1,170 @@
+{% extends "base.html" %} {% block maincontents %}
+<style>
+    /* Apply CSS style to make the table scrollable */
+    
+    .table-responsive {
+        max-height: 280px;
+        /* Set the maximum height */
+        overflow-y: auto;
+        /* Enable vertical scrollbar */
+    }
+</style>
+
+<div class="container">
+    <h4 class="text-center">AutoML System Application</h4>
+    <div class="contain">
+        <form method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="name" required>
+                <label for="floatingInputGrid">Project Title</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control" name="csvFile" id="csvFile" accept=".csv, .xlsx, .xls" required>
+                <label for="csvFile">Upload CSV file</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="targetcol" required>
+                <label for="floatingInputGrid">Target Column Name</label>
+            </div>
+            <div class="form-floating">
+                <select class="form-select" id="problemType" name="problemType" required>
+                        <option selected>Open this select menu</option>
+                        <option value="Regression">Regression</option>
+                        <option value="Classification">Classification</option>
+                        <option value="Other">Other</option>
+                    </select>
+                <label for="problemType">Select Problems</label>
+            </div>
+
+            <button type="submit" class="btn btn-success my-2">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<!-- Display the CSV data in a responsive table -->
+
+{% if table is not none %}
+<div class="container">
+    <h5 class="text-center">Your DataSet</h5>
+    <hr>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    {% for col in table.columns %}
+                    <th>{{ col }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in table.values %}
+                <tr>
+                    {% for val in row %}
+                    <td>{{ val }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="my-2" style="display: table;margin: auto;">
+        <a href="{% url 'chat_datasets' %}" class="btn btn-outline-info">Query About Your Dataset's</a>
+        <a href="{% url 'generate_and_display_profile' %}" class="btn btn-outline-info">DataSet Report</a>
+    </div>
+</div>
+{% endif %}
+
+<!-- Classification Report -->
+{% if problem_type == 'Classification' and prediction_report %}
+<div class="container">
+    <h4 class="text-center" style="margin: 30px;">Classification Report</h4>
+    <hr>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Class</th>
+                    <th>Precision</th>
+                    <th>Recall</th>
+                    <th>F1-Score</th>
+                    <th>Support</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for class, metrics in report.items %}
+                <tr>
+                    <td>{{ class }}</td>
+                    <td>{{ metrics.precision }}</td>
+                    <td>{{ metrics.recall }}</td>
+                    <td>{{ metrics.recall }}</td>
+                    <td>{{ metrics.support }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <hr>
+        <div class="d-flex">
+            <p>Accuracy Score of Test Dataset:- {{ accuracy }}%</p>
+            <p style="margin-left: 30px;">Best Model Name:- {{ best_model_name }}</p>
+        </div>
+        <hr>
+    </div>
+</div>
+{% endif %}
+
+<!-- Regression Report -->
+{% if problem_type == 'Regression' %}
+<div class="container">
+    <h4 class="text-center">Regressor Report</h4>
+    <hr>
+    <div class="d-flex">
+        <p class="m-2">Mean Squared Error:- {{ mse }}</p>
+        <p class="m-2">Mean Absolute Error:- {{ mae }}</p>
+        <p class="m-2">Root Mean Squared Error:- {{ rmse }}</p>
+    </div>
+    <hr>
+    <p>Best Model Name:- {{ best_model_name }}</p>
+    <hr>
+    <!-- Uncomment the following line if you want to display predictions -->
+    <!-- <p>Predictions:- {{ predictions }}</p> -->
+</div>
+{% endif %}
+
+
+<!--download best model-->
+<div class="container">
+
+    {% if model_link %}
+    <h4>Download the Best Model:</h4>
+    <a href="{{ model_link }}">Download Model</a> {% endif %}
+</div>
+<!-- End of .container -->
+
+
+<div class="container">
+    <div class="contain">
+        <p class="h4 fw-bold fs-2 text-center mb-1" style="color: #9c9e9f;">Introducing Our Revolutionary AutoML Application</p>
+        <hr>
+        <p>Are you ready to supercharge your data analysis and predictive modeling? Our AutoML application is here to transform the way you work with data. No more intricate coding or in-depth machine learning expertise required. With just a few clicks,
+            you can build powerful machine learning models and extract valuable insights from your datasets.
+        </p>
+        <img src="https://i.pinimg.com/originals/fc/71/63/fc71635c7f1b09ed30413f59bb749582.gif" alt="" style="width: 100%;height: 80vh;">
+        <p><b>📊 Key Features:</b></p>
+        <hr>
+        <p><b>✅ Automated Model Selection: </b> Let our application do the heavy lifting by selecting the best machine learning model for your data.</p>
+        <p><b>✅ Predictive Analytics: </b> Unlock the ability to make data-driven predictions for your business or research.</p>
+        <p><b>✅ User-Friendly Interface: </b> Our intuitive, user-friendly platform ensures you don't need to be a data scientist to use it effectively.</p>
+        <p><b>✅ Data Visualization: </b>Create stunning data visualizations to help you understand and communicate your insights.</p>
+        <p><b>🌐 Scalability: </b>Whether you're working with small datasets or big data, our AutoML app scales to meet your needs.</p>
+        <p><b>💼 Business Integration: </b>Easily incorporate machine learning insights into your daily operations and decision-making processes.</p>
+
+        <details class="my-3">
+            <summary>Get Ready To Explore</summary>
+            <p>Ready to revolutionize the way you work with data? Get started now and experience the power of our AutoML application. Your data analysis journey just got simpler, faster, and more powerful! 🌐💡</p>
+        </details>
+    </div>
+</div>
+
+{% endblock %}

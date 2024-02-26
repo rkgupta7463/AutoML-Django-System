@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block maincontents %}
+<div class="container">
+    <h4 class="text-center">Upload Your Dataset to get the dataset's reports</h4>
+    <div class="contain">
+        <form action="{% url 'generate_and_display_profile' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-floating mb-3">
+                <input type="file" class="form-control" name="csvFile" id="csvFile" accept=".csv" required>
+                <label for="csvFile">Upload CSV file</label>
+            </div>
+            <button type="submit" class="btn btn-success my-2" id="submitBtn">Show Report</button>
+        </form>
+    </div>
+    <div class="contain">
+        <p class="h4 fw-bold fs-2 text-center mb-1" style="color: #9c9e9f;">About DataSet Report Generation</p>
+        <hr>
+        <p>In today's data-driven world, the ability to harness the potential of your datasets is paramount. Welcome to our cutting-edge website, where we have developed a powerful tool that empowers users to upload CSV or Excel files, generate detailed
+            dataset reports, and ask any questions they have about their data. With our platform, you can unlock the true value of your data and gain valuable insights. In this article, we will dive into the features and benefits of our data analysis
+            tool.
+        </p>
+        <img src="https://i.pinimg.com/originals/fc/71/63/fc71635c7f1b09ed30413f59bb749582.gif" alt="" style="width: 100%;height: 80vh;">
+        <p><b>Features: </b></p>
+        <hr>
+        <p><b>1. Seamless Data Upload: </b> Our platform allows users to effortlessly upload their CSV or Excel files. Whether you have sales data, customer information, or any other dataset, our tool is designed to handle it all. Comprehensive</p>
+        <p><b>2. Dataset Reports:</b> Upon uploading your dataset, our system automatically generates detailed reports. These reports include essential statistics, charts, and graphs, offering a holistic view of your data. This feature simplifies the process
+            of understanding your dataset's structure and characteristics.
+        </p>
+        <p>3. Interactive Data Exploration: Users can ask specific questions about their data. Our tool is equipped with a natural language processing system that understands and responds to your queries. You can seek insights, trends, correlations, and
+            more by simply asking questions like, "What are the sales trends for the past year?" or "Are there any correlations between product reviews and sales?" </p>
+        <p><b>4. Data Visualization: </b>Visualizing data is crucial for understanding complex datasets. Our tool provides interactive data visualization options, allowing you to create customized graphs and charts to illustrate your findings. </p>
+        <p><b>5. Export and Share Reports: </b>You can export your dataset reports in various formats, making it easy to share insights with colleagues, team members, or stakeholders. Whether it's a PDF, Excel, or a web link, our platform ensures that you
+            can disseminate your findings effortlessly.</p>
+
+        <!-- <hr> -->
+
+        <p><b>Benefits:</b></p>
+        <hr>
+
+        <p><b>1. Time-Saving:</b>Our tool automates the process of dataset analysis, saving users hours of manual work. You can quickly gain insights without the need for complex data analysis tools or expertise.</p>
+
+        <p><b>2. User-Friendly: </b>The platform is designed to be user-friendly, making it accessible to individuals with varying levels of data analysis experience. You don't need to be a data scientist to use it effectively. </p>
+        <p><b>3. Data-Driven Decision Making: </b>The insights generated through our platform can drive informed decision-making in business, research, or any field where data analysis is critical. </p>
+
+        <p><b>4. Cost-Efficient: </b>Our service offers an economical solution for data analysis, eliminating the need for expensive software or hiring specialized data analysts.</p>
+    </div>
+</div>
+
+{% endblock %}

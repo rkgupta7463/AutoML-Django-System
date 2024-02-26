@@ -1,0 +1,1304 @@
+2023-10-25 00:20:52 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 331, in chat_datasets
+    return render("chat.html",table=global_df,message=error_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() got an unexpected keyword argument 'table'
+2023-10-25 00:21:01 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:22:37 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 336, in chat_datasets
+    return render("chat.html",table=global_df,message=error_message)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() got an unexpected keyword argument 'table'
+2023-10-25 00:23:25 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:23:50 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 341, in chat_datasets
+    return render("chat.html",context)
+                              ^^^^^^^
+UnboundLocalError: cannot access local variable 'context' where it is not associated with a value
+2023-10-25 00:24:31 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:24:48 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view main.views.chat_datasets didn't return an HttpResponse object. It returned None instead.
+2023-10-25 00:24:57 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:25:18 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 341, in chat_datasets
+    return render("chat.html",context)
+                              ^^^^^^^
+UnboundLocalError: cannot access local variable 'context' where it is not associated with a value
+2023-10-25 00:25:41 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:27:19 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 340, in chat_datasets
+    return render(request, "chat.html", context)
+                                        ^^^^^^^
+UnboundLocalError: cannot access local variable 'context' where it is not associated with a value
+2023-10-25 00:28:09 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 00:28:36 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'table.shape[0]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 339, in chat_datasets
+    return render(request, "chat.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[0]' from 'table.shape[0]'
+2023-10-25 00:29:01 [INFO] D:\Django\AutoML_App\AutoML_proj\main\urls.py changed, reloading.
+2023-10-25 00:30:07 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 339, in chat_datasets
+    return render(request, "chat.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('home')' from 'url_for('home')'
+2023-10-25 00:30:22 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 339, in chat_datasets
+    return render(request, "chat.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '('chat_datasets')' from 'url_for('chat_datasets')'
+2023-10-25 12:04:17 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:06:17 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:06:37 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 331, in chat_datasets
+    print(context.table)
+          ^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'global_df'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 339, in chat_datasets
+    print(context.table)
+          ^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'table'
+2023-10-25 12:06:47 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:07:39 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:07:46 [ERROR] Internal Server Error: /chat-with-dataset/
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 331, in chat_datasets
+    print(context['table'])
+          ~~~~~~~^^^^^^^^^
+KeyError: 'table'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 339, in chat_datasets
+    print(context['table'].col)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\generic.py", line 5902, in __getattr__
+    return object.__getattribute__(self, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataFrame' object has no attribute 'col'
+2023-10-25 12:08:32 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:08:50 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:09:08 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:11:06 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:16:23 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:18:20 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:18:35 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:19:21 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:20:15 [WARNING] Forbidden (CSRF token missing.): /chat-with-dataset/
+2023-10-25 12:20:29 [WARNING] Forbidden (CSRF token missing.): /chat-with-dataset/
+2023-10-25 12:20:47 [INFO] Question: how many rows are in this dataset?
+2023-10-25 12:20:48 [INFO] Running PandasAI with openai LLM...
+2023-10-25 12:20:48 [INFO] Prompt ID: 86f25444-97c9-43eb-b53a-4fba6d1d39ec
+2023-10-25 12:20:48 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 918 rows and 12 columns.
+This is the metadata of the dataframe dfs[0]:
+Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope,HeartDisease
+
+54,M,NAP,150,195,0,Normal,122,N,0.0,Up,0
+
+40,M,ATA,140,289,0,Normal,172,N,0.0,Up,0
+
+48,F,ASY,138,214,0,Normal,108,Y,1.5,Flat,1
+
+49,F,NAP,160,180,0,Normal,156,N,1.0,Flat,1
+
+37,M,ATA,130,283,0,ST,98,N,0.0,Up,0
+
+</dataframe>
+
+<conversation>
+User 1: how many rows are in this dataset?
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-25 12:21:13 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Get the number of rows in the dataset
+    num_rows = dfs[0].shape[0]
+    
+    # Return the result as a string
+    result = {
+        "type": "string",
+        "value": f"The dataset contains {num_rows} rows."
+    }
+    
+    return result
+```
+
+2023-10-25 12:21:13 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    num_rows = dfs[0].shape[0]
+    result = {'type': 'string', 'value': f'The dataset contains {num_rows} rows.'}
+    return result
+        ```
+2023-10-25 12:21:13 [INFO] Answer: {'type': 'string', 'value': 'The dataset contains 918 rows.'}
+2023-10-25 12:21:13 [INFO] Executed in: 25.15359616279602s
+2023-10-25 12:28:23 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:30:09 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-10-25 12:30:49 [INFO] Question: how many rows are in this dataset?
+2023-10-25 12:30:49 [INFO] Running PandasAI with openai LLM...
+2023-10-25 12:30:49 [INFO] Prompt ID: 32c022c2-155d-4d0f-88f3-39141e149bd2
+2023-10-25 12:30:49 [INFO] Using cached response
+2023-10-25 12:30:49 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Get the number of rows in the dataset
+    num_rows = dfs[0].shape[0]
+    
+    # Return the result as a string
+    result = {
+        "type": "string",
+        "value": f"The dataset contains {num_rows} rows."
+    }
+    
+    return result
+```
+
+2023-10-25 12:30:49 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    num_rows = dfs[0].shape[0]
+    result = {'type': 'string', 'value': f'The dataset contains {num_rows} rows.'}
+    return result
+        ```
+2023-10-25 12:30:49 [INFO] Answer: {'type': 'string', 'value': 'The dataset contains 918 rows.'}
+2023-10-25 12:30:49 [INFO] Executed in: 0.3756706714630127s
+2023-10-25 12:31:23 [INFO] Question: can you plot the bar graph in between sex and Heart Disease column
+2023-10-25 12:31:23 [INFO] Running PandasAI with openai LLM...
+2023-10-25 12:31:23 [INFO] Prompt ID: 527f085f-09bc-42f5-9c07-f25f068ec3ab
+2023-10-25 12:31:23 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 918 rows and 12 columns.
+This is the metadata of the dataframe dfs[0]:
+Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope,HeartDisease
+37,M,ATA,130,283,0,ST,98,N,0.0,Up,0
+48,F,ASY,138,214,0,Normal,108,Y,1.5,Flat,1
+49,F,NAP,160,180,0,Normal,156,N,1.0,Flat,1
+40,M,ATA,140,289,0,Normal,172,N,0.0,Up,0
+54,M,NAP,150,195,0,Normal,122,N,0.0,Up,0
+</dataframe>
+
+<conversation>
+User 1: can you plot the bar graph in between sex and Heart Disease column
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2023-10-25 12:31:59 [INFO] Code generated:
+```
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare: No preprocessing or cleaning required
+    
+    # Process: Grouping by Sex and HeartDisease columns and counting the occurrences
+    grouped = dfs[0].groupby(['Sex', 'HeartDisease']).size().reset_index(name='Count')
+    
+    # Analyze: Plotting the bar graph
+    plt.bar(grouped['Sex'] + grouped['HeartDisease'], grouped['Count'])
+    plt.xlabel('Sex and Heart Disease')
+    plt.ylabel('Count')
+    plt.title('Bar Graph: Sex vs Heart Disease')
+    plt.savefig('temp_chart.png')
+    plt.close()
+    
+    # Return the path of the plot
+    return { "type": "plot", "value": "temp_chart.png" }
+```
+
+2023-10-25 12:31:59 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    grouped = dfs[0].groupby(['Sex', 'HeartDisease']).size().reset_index(name='Count')
+    plt.bar(grouped['Sex'] + grouped['HeartDisease'], grouped['Count'])
+    plt.xlabel('Sex and Heart Disease')
+    plt.ylabel('Count')
+    plt.title('Bar Graph: Sex vs Heart Disease')
+    plt.savefig('temp_chart.png')
+    plt.close()
+    return {'type': 'plot', 'value': 'temp_chart.png'}
+        ```
+2023-10-25 12:31:59 [WARNING] Error of executing code
+2023-10-25 12:31:59 [WARNING] Failed to execute code with a correction framework [retry number: 1]
+2023-10-25 12:31:59 [ERROR] Failed with error: Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 165, in _na_arithmetic_op
+    result = func(left, right)
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\computation\expressions.py", line 241, in evaluate
+    return _evaluate(op, op_str, a, b)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+           ^^^^^^^^
+TypeError: can only concatenate str (not "int") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    result = self._code_manager.execute_code(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandasai\helpers\code_manager.py", line 244, in execute_code
+    return analyze_data(self._get_originals(dfs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in analyze_data
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\common.py", line 72, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\arraylike.py", line 102, in __add__
+    return self._arith_method(other, operator.add)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\series.py", line 6259, in _arith_method
+    return base.IndexOpsMixin._arith_method(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\base.py", line 1325, in _arith_method
+    result = ops.arithmetic_op(lvalues, rvalues, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 226, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 172, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 110, in _masked_arith_op
+    result[mask] = op(xrav[mask], yrav[mask])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "int") to str
+. Retrying
+2023-10-25 12:31:59 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames with the following metadata:
+
+<dataframe>
+Dataframe dfs[0], with 918 rows and 12 columns.
+This is the metadata of the dataframe dfs[0]:
+Age,Sex,ChestPainType,RestingBP,Cholesterol,FastingBS,RestingECG,MaxHR,ExerciseAngina,Oldpeak,ST_Slope,HeartDisease
+37,M,ATA,130,283,0,ST,98,N,0.0,Up,0
+48,F,ASY,138,214,0,Normal,108,Y,1.5,Flat,1
+49,F,NAP,160,180,0,Normal,156,N,1.0,Flat,1
+40,M,ATA,140,289,0,Normal,172,N,0.0,Up,0
+54,M,NAP,150,195,0,Normal,122,N,0.0,Up,0
+</dataframe>
+
+The user asked the following question:
+User 1: can you plot the bar graph in between sex and Heart Disease column
+
+You generated this python code:
+# TODO import all the dependencies required
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    # Prepare: No preprocessing or cleaning required
+    
+    # Process: Grouping by Sex and HeartDisease columns and counting the occurrences
+    grouped = dfs[0].groupby(['Sex', 'HeartDisease']).size().reset_index(name='Count')
+    
+    # Analyze: Plotting the bar graph
+    plt.bar(grouped['Sex'] + grouped['HeartDisease'], grouped['Count'])
+    plt.xlabel('Sex and Heart Disease')
+    plt.ylabel('Count')
+    plt.title('Bar Graph: Sex vs Heart Disease')
+    plt.savefig('temp_chart.png')
+    plt.close()
+    
+    # Return the path of the plot
+    return { "type": "plot", "value": "temp_chart.png" }
+
+It fails with the following error:
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 165, in _na_arithmetic_op
+    result = func(left, right)
+             ^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\computation\expressions.py", line 241, in evaluate
+    return _evaluate(op, op_str, a, b)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\computation\expressions.py", line 70, in _evaluate_standard
+    return op(a, b)
+           ^^^^^^^^
+TypeError: can only concatenate str (not "int") to str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandasai\smart_datalake\__init__.py", line 337, in chat
+    result = self._code_manager.execute_code(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandasai\helpers\code_manager.py", line 244, in execute_code
+    return analyze_data(self._get_originals(dfs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 20, in analyze_data
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\common.py", line 72, in new_method
+    return method(self, other)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\arraylike.py", line 102, in __add__
+    return self._arith_method(other, operator.add)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\series.py", line 6259, in _arith_method
+    return base.IndexOpsMixin._arith_method(self, other, op)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\base.py", line 1325, in _arith_method
+    result = ops.arithmetic_op(lvalues, rvalues, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 226, in arithmetic_op
+    res_values = _na_arithmetic_op(left, right, op)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 172, in _na_arithmetic_op
+    result = _masked_arith_op(left, right, op)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\pandas\core\ops\array_ops.py", line 110, in _masked_arith_op
+    result[mask] = op(xrav[mask], yrav[mask])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: can only concatenate str (not "int") to str
+
+
+Correct the python code and return a new python code that fixes the above mentioned error. Do not generate the same code again.
+
+2023-10-25 12:32:35 [INFO] 
+Code running:
+```
+def analyze_data(dfs: list[pd.DataFrame]) ->dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+    grouped = dfs[0].groupby(['Sex', 'HeartDisease']).size().reset_index(name='Count')
+    grouped['Sex_HeartDisease'] = grouped['Sex'] + ' ' + grouped['HeartDisease'].astype(str)
+    plt.bar(grouped['Sex_HeartDisease'], grouped['Count'])
+    plt.xlabel('Sex and Heart Disease')
+    plt.ylabel('Count')
+    plt.title('Bar Graph: Sex vs Heart Disease')
+    plt.xticks(rotation=45)
+    plt.savefig('temp_chart.png')
+    plt.close()
+    return {'type': 'plot', 'value': 'temp_chart.png'}
+        ```
+2023-10-25 12:32:35 [INFO] Answer: {'type': 'plot', 'value': 'temp_chart.png'}
+2023-10-25 12:32:35 [INFO] Executed in: 72.03821992874146s
+2023-11-05 21:54:12 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-11-06 23:13:51 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2023-11-06 23:42:56 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 269, in home
+    return render(request, 'home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-score' from 'metrics.f1-score'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 318, in home
+    return render(request, 'home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '-score' from 'metrics.f1-score'
+2023-11-06 23:43:29 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 269, in home
+    return render(request, 'home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '['f1-score']' from 'metrics['f1-score']'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\AutoML_proj\main\views.py", line 318, in home
+    return render(request, 'home.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Django\AutoML_App\env\Lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '['f1-score']' from 'metrics['f1-score']'
+2023-11-06 23:44:34 [INFO] D:\Django\AutoML_App\AutoML_proj\main\views.py changed, reloading.
+2024-02-07 11:41:58 [INFO] Question: how many total rows are there in dataset?
+2024-02-07 11:42:00 [INFO] Running PandasAI with openai LLM...
+2024-02-07 11:42:00 [INFO] Prompt ID: d711eca3-15a3-4d67-8213-58861a14301b
+2024-02-07 11:42:00 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 5200 rows and 26 columns.
+This is the metadata of the dataframe dfs[0]:
+Unnamed: 0,age,bp,sg,al,su,rbc,pc,pcc,ba,bgr,bu,sc,sod,pot,hemo,pcv,wc,rc,htn,dm,cad,appet,pe,ane,classification
+3,48,70.0,1.005,4.0,0.0,normal,abnormal,present,notpresent,117.0,56.0,3.8,111.0,2.5,11.2,32.0,6700,3.9,yes,no,no,poor,yes,yes,ckd
+0,48,80.0,1.02,1.0,0.0,normal,normal,notpresent,notpresent,121.0,36.0,1.2,137.52875399361022,4.627243589743589,15.4,44.0,7800,5.2,yes,yes,no,good,no,no,ckd
+4,51,80.0,1.01,2.0,0.0,normal,normal,notpresent,notpresent,106.0,26.0,1.4,137.52875399361022,4.627243589743589,11.6,35.0,7300,4.6,no,no,no,good,no,no,ckd
+1,7,50.0,1.02,4.0,0.0,normal,normal,notpresent,notpresent,148.0365168539326,18.0,0.8,137.52875399361022,4.627243589743589,11.3,38.0,6000,5.2,no,no,no,good,no,no,ckd
+2,62,80.0,1.01,2.0,3.0,normal,normal,notpresent,notpresent,423.0,53.0,1.8,137.52875399361022,4.627243589743589,9.6,31.0,7500,5.2,no,yes,no,poor,no,yes,ckd
+</dataframe>
+
+<conversation>
+User 1: how many total rows are there in dataset?
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2024-02-07 11:42:00 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014E07FD1150>: Failed to resolve 'api.openai.com' ([Errno 11001] getaddrinfo failed)")': /v1/chat/completions
+2024-02-07 11:42:00 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014E07FD1010>: Failed to resolve 'api.openai.com' ([Errno 11001] getaddrinfo failed)")': /v1/chat/completions
+2024-02-07 11:50:43 [INFO] D:\Django\AutoML_App\AutoML_proj\Secret_key\constants.py changed, reloading.
+2024-02-07 11:52:50 [INFO] Question: how many row?
+2024-02-07 11:52:51 [INFO] Running PandasAI with openai LLM...
+2024-02-07 11:52:51 [INFO] Prompt ID: 44f2a452-3f49-4379-bbdb-822d44575d08
+2024-02-07 11:52:51 [INFO] Using prompt: 
+You are provided with the following pandas DataFrames:
+
+<dataframe>
+Dataframe dfs[0], with 5200 rows and 26 columns.
+This is the metadata of the dataframe dfs[0]:
+Unnamed: 0,age,bp,sg,al,su,rbc,pc,pcc,ba,bgr,bu,sc,sod,pot,hemo,pcv,wc,rc,htn,dm,cad,appet,pe,ane,classification
+2,62,80.0,1.01,2.0,3.0,normal,normal,notpresent,notpresent,423.0,53.0,1.8,137.52875399361022,4.627243589743589,9.6,31.0,7500,5.2,no,yes,no,poor,no,yes,ckd
+3,48,70.0,1.005,4.0,0.0,normal,abnormal,present,notpresent,117.0,56.0,3.8,111.0,2.5,11.2,32.0,6700,3.9,yes,no,no,poor,yes,yes,ckd
+1,7,50.0,1.02,4.0,0.0,normal,normal,notpresent,notpresent,148.0365168539326,18.0,0.8,137.52875399361022,4.627243589743589,11.3,38.0,6000,5.2,no,no,no,good,no,no,ckd
+4,51,80.0,1.01,2.0,0.0,normal,normal,notpresent,notpresent,106.0,26.0,1.4,137.52875399361022,4.627243589743589,11.6,35.0,7300,4.6,no,no,no,good,no,no,ckd
+0,48,80.0,1.02,1.0,0.0,normal,normal,notpresent,notpresent,121.0,36.0,1.2,137.52875399361022,4.627243589743589,15.4,44.0,7800,5.2,yes,yes,no,good,no,no,ckd
+</dataframe>
+
+<conversation>
+User 1: how many row?
+</conversation>
+
+This is the initial python code to be updated:
+```python
+# TODO import all the dependencies required
+import pandas as pd
+
+def analyze_data(dfs: list[pd.DataFrame]) -> dict:
+    """
+    Analyze the data
+    1. Prepare: Preprocessing and cleaning data if necessary
+    2. Process: Manipulating data for analysis (grouping, filtering, aggregating, etc.)
+    3. Analyze: Conducting the actual analysis (if the user asks to plot a chart save it to an image in temp_chart.png and do not show the chart.)
+    At the end, return a dictionary of:
+    - type (possible values "string", "number", "dataframe", "plot")
+    - value (can be a string, a dataframe or the path of the plot, NOT a dictionary)
+    Examples: 
+        { "type": "string", "value": "The highest salary is $9,000." }
+        or
+        { "type": "number", "value": 125 }
+        or
+        { "type": "dataframe", "value": pd.DataFrame({...}) }
+        or
+        { "type": "plot", "value": "temp_chart.png" }
+    """
+```
+
+Using the provided dataframes (`dfs`), update the python code based on the last question in the conversation.
+
+Updated code:
+
+2024-02-07 11:52:53 [INFO] error_code=insufficient_quota error_message='You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.' error_param=None error_type=insufficient_quota message='OpenAI API error received' stream_error=False
