@@ -32,6 +32,9 @@ Prerequisites
 Clone the repository:
 
     git clone (https://github.com/rkgupta7463/AutoML-Django-System.git)
+
+Navigate to project dir
+
     cd AutoML-Django-System
 
 Install the required libraries:
