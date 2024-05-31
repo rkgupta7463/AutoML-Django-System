@@ -15,7 +15,7 @@ Enjoy a seamless experience interacting with your uploaded datasets. Our platfor
 
 Effortlessly train regression or classification models on your datasets. Our platform identifies the best model with the highest accuracy. You can download the best model for further use in your applications. This feature supports:
 
-    I. Regression**
+    I. Regression
     II. Classification
 
 ### *4. AI Assistant*
